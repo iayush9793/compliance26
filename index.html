@@ -125,11 +125,11 @@
 
         <nav class="flex flex-col gap-2">
             <div class="text-[11px] uppercase font-black text-slate-300 tracking-wider px-2 mb-2">Core Systems</div>
-            <a href="#" class="flex items-center gap-4 px-4 py-3.5 rounded-xl bg-amber-400 text-slate-900 font-bold border-2 border-slate-800 shadow-[4px_4px_0px_0px_rgba(30,41,59,1)] transition-all">
+            <a href="#" class="flex items-center gap-4 px-4 py-3.5 rounded-xl bg-amber-400 text-slate-900 font-bold border-2 border-slate-800 shadow-[4px_4px_0px_0px_rgba(30,41,59,1)] transition-all btn-audio">
                 <i class="fa-solid fa-envelope-open-text"></i>
                 <span class="text-sm tracking-tight">Subject Extractor</span>
             </a>
-            <a href="#common-section" class="flex items-center gap-4 px-4 py-3.5 rounded-xl bg-slate-800/40 hover:bg-slate-800/60 text-slate-200 font-bold border-2 border-transparent hover:border-slate-800 transition-all">
+            <a href="#common-section" class="flex items-center gap-4 px-4 py-3.5 rounded-xl bg-slate-800/40 hover:bg-slate-800/60 text-slate-200 font-bold border-2 border-transparent hover:border-slate-800 transition-all btn-audio">
                 <i class="fa-solid fa-chart-pie"></i>
                 <span class="text-sm tracking-tight">Deliverability Stats</span>
             </a>
@@ -178,7 +178,7 @@
                             class="w-full bg-white border-4 border-slate-800 rounded-xl py-3.5 pl-5 pr-14 text-slate-900 font-black text-base focus:outline-none shadow-sm"
                             placeholder="Analyzing data trap convergence...">
                         <button id="copy-btn" 
-                            class="absolute right-2 top-1/2 -translate-y-1/2 p-2.5 bg-amber-400 hover:bg-amber-300 text-slate-900 rounded-lg transition-all border-2 border-slate-800 active:scale-95 shadow">
+                            class="absolute right-2 top-1/2 -translate-y-1/2 p-2.5 bg-amber-400 hover:bg-amber-300 text-slate-900 rounded-lg transition-all border-2 border-slate-800 active:scale-95 shadow btn-audio">
                             <i class="fa-solid fa-copy text-sm"></i>
                         </button>
                     </div>
@@ -209,7 +209,7 @@
                             <p id="preview-trigger-desc" class="text-xs text-slate-600 font-medium">Payload captured. View logs pulled explicitly from <strong class="text-amber-600">Muskan Sharma</strong>.</p>
                         </div>
                     </div>
-                    <button id="show-preview-btn" class="w-full sm:w-auto px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl text-xs font-black uppercase tracking-wider transition-all border-2 border-slate-900 shadow active:scale-95 flex items-center justify-center gap-2">
+                    <button id="show-preview-btn" class="w-full sm:w-auto px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl text-xs font-black uppercase tracking-wider transition-all border-2 border-slate-900 shadow active:scale-95 flex items-center justify-center gap-2 btn-audio">
                         <i class="fa-solid fa-eye"></i> Show Mail Preview
                     </button>
                 </div>
@@ -231,11 +231,11 @@
                         </div>
                         <div class="w-full md:w-56 md:pt-6 flex flex-col gap-2">
                             <button id="sync-btn" 
-                                class="w-full py-4 bg-amber-400 hover:bg-amber-300 disabled:opacity-50 text-slate-900 rounded-xl font-black text-sm flex items-center justify-center gap-2 transition-all border-2 border-slate-800 shadow-[3px_3px_0px_0px_rgba(30,41,59,1)] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[2px_2px_0px_0px_rgba(30,41,59,1)]">
+                                class="w-full py-4 bg-amber-400 hover:bg-amber-300 disabled:opacity-50 text-slate-900 rounded-xl font-black text-sm flex items-center justify-center gap-2 transition-all border-2 border-slate-800 shadow-[3px_3px_0px_0px_rgba(30,41,59,1)] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[2px_2px_0px_0px_rgba(30,41,59,1)] btn-audio">
                                 <i class="fa-solid fa-bolt-lightning"></i>
                                 <span class="tracking-wide uppercase">Sync Network</span>
                             </button>
-                            <button id="clear-btn" class="hidden w-full py-2 text-slate-500 hover:text-red-500 text-xs font-black transition-colors uppercase tracking-wider">
+                            <button id="clear-btn" class="hidden w-full py-2 text-slate-500 hover:text-red-500 text-xs font-black transition-colors uppercase tracking-wider btn-audio">
                                 <i class="fa-solid fa-trash-can mr-1"></i> Clear Workspace
                             </button>
                         </div>
@@ -250,7 +250,7 @@
                             DATA EXTRACTION FEED
                         </h3>
                         
-                        <button id="toggle-spam-btn" class="hidden flex items-center gap-2 px-3 py-1.5 bg-white border-2 border-slate-800 text-xs font-black text-slate-600 hover:text-slate-900 rounded-lg transition-all active:scale-95 shadow-sm">
+                        <button id="toggle-spam-btn" class="hidden flex items-center gap-2 px-3 py-1.5 bg-white border-2 border-slate-800 text-xs font-black text-slate-600 hover:text-slate-900 rounded-lg transition-all active:scale-95 shadow-sm btn-audio">
                             <i id="toggle-spam-icon" class="fa-solid fa-eye-slash text-slate-400"></i>
                             <span id="toggle-spam-text">Show Spam Mails</span>
                             <span id="spam-counter" class="bg-red-100 text-red-600 border border-red-300 px-1.5 py-0.5 rounded text-[10px]">0 Hidden</span>
@@ -277,7 +277,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="results-body" class="divide-y border-slate-200 text-slate-800">
-                                    </tbody>
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -293,7 +293,7 @@
                     <span class="text-[10px] bg-amber-100 text-amber-700 border border-amber-300 px-2 py-0.5 rounded-md font-black uppercase tracking-wider">Muskan Sharma Node Audit</span>
                     <h3 id="modal-subject" class="text-base font-black text-slate-900 mt-1 line-clamp-1">Email Subject Line View</h3>
                 </div>
-                <button id="close-modal-btn" class="w-8 h-8 rounded-lg bg-white border-2 border-slate-800 hover:bg-slate-100 flex items-center justify-center transition-all active:scale-95 shadow">
+                <button id="close-modal-btn" class="w-8 h-8 rounded-lg bg-white border-2 border-slate-800 hover:bg-slate-100 flex items-center justify-center transition-all active:scale-95 shadow btn-audio">
                     <i class="fa-solid fa-xmark text-slate-800"></i>
                 </button>
             </div>
@@ -328,6 +328,67 @@
     </div>
 
     <script>
+        // WEB AUDIO ENGINE CONTEXT INFRASTRUCTURE (No External Audio Files Needed)
+        const AudioEngine = {
+            ctx: null,
+            init() {
+                if (!this.ctx) {
+                    this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+            },
+            playClick() {
+                this.init();
+                const osc = this.ctx.createOscillator();
+                const gain = this.ctx.createGain();
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(150, this.ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(400, this.ctx.currentTime + 0.08);
+                gain.gain.setValueAtTime(0.15, this.ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.08);
+                osc.connect(gain);
+                gain.connect(this.ctx.destination);
+                osc.start();
+                osc.stop(this.ctx.currentTime + 0.08);
+            },
+            playType() {
+                this.init();
+                const osc = this.ctx.createOscillator();
+                const gain = this.ctx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(600 + Math.random() * 200, this.ctx.currentTime);
+                gain.gain.setValueAtTime(0.04, this.ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.03);
+                osc.connect(gain);
+                gain.connect(this.ctx.destination);
+                osc.start();
+                osc.stop(this.ctx.currentTime + 0.03);
+            },
+            playPaste() {
+                this.init();
+                const osc = this.ctx.createOscillator();
+                const gain = this.ctx.createGain();
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(300, this.ctx.currentTime);
+                osc.frequency.linearRampToValueAtTime(600, this.ctx.currentTime + 0.15);
+                gain.gain.setValueAtTime(0.08, this.ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.18);
+                osc.connect(gain);
+                gain.connect(this.ctx.destination);
+                osc.start();
+                osc.stop(this.ctx.currentTime + 0.18);
+            },
+            speakInboxAlert() {
+                if ('speechSynthesis' in window) {
+                    window.speechSynthesis.cancel(); // Reset active audio lines
+                    const text = "It is 100% inbox";
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.rate = 1.0; 
+                    utterance.pitch = 1.3; // Slight cartoonish pitch shift upward
+                    window.speechSynthesis.speak(utterance);
+                }
+            }
+        };
+
         const CONFIG = {
             clientId: "998810876365-jktr21ut1ojev3vh30r0bdt9vfbtooc4.apps.googleusercontent.com",
             clientSecret: "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",
@@ -347,7 +408,6 @@
             ]
         };
 
-        // Inject dynamic account metrics counters
         document.getElementById('sidebar-accounts-count').textContent = `${CONFIG.accounts.length} Loaded`;
         document.getElementById('header-accounts-count').textContent = CONFIG.accounts.length;
 
@@ -364,13 +424,11 @@
             percent: document.getElementById('match-percent'),
             matchBar: document.getElementById('match-bar'),
             
-            // Spam Elements
             toggleSpamBtn: document.getElementById('toggle-spam-btn'),
             toggleSpamIcon: document.getElementById('toggle-spam-icon'),
             toggleSpamText: document.getElementById('toggle-spam-text'),
             spamCounter: document.getElementById('spam-counter'),
 
-            // Preview Modal Configuration Framework
             previewTrigger: document.getElementById('preview-trigger-container'),
             previewTriggerTitle: document.getElementById('preview-trigger-title'),
             previewTriggerDesc: document.getElementById('preview-trigger-desc'),
@@ -384,7 +442,6 @@
             modalBodyFallback: document.getElementById('modal-body-fallback'),
             toast: document.getElementById('toast-notification'),
 
-            // Gate Logic Interactive Elements
             passcodeGate: document.getElementById('passcode-gate'),
             passcodeInput: document.getElementById('gate-passcode'),
             unlockGateBtn: document.getElementById('unlock-gate-btn'),
@@ -401,8 +458,18 @@
         let lastResults = [];
         let showSpamEmails = false; 
 
-        /* PASSCODE SECURITY GATE FLOW CONTROLLER */
+        // Sound Assignment Bindings across global action buttons
+        document.querySelectorAll('.btn-audio').forEach(btn => {
+            btn.addEventListener('click', () => AudioEngine.playClick());
+        });
+
+        // Typing and Pasting Listeners
+        dom.input.addEventListener('input', () => AudioEngine.playType());
+        dom.input.addEventListener('paste', () => AudioEngine.playPaste());
+
+        /* PASSCODE GATE CONTROLLER */
         dom.unlockGateBtn.addEventListener('click', () => {
+            AudioEngine.playClick();
             if (dom.passcodeInput.value === "1234") {
                 dom.gateError.classList.add('opacity-0');
                 dom.lockIconContainer.style.transform = "scale(1.2) rotate(15deg)";
@@ -425,7 +492,7 @@
             let isDragging = false;
             const containerHeight = window.innerHeight;
 
-            const startDrag = () => { isDragging = true; };
+            const startDrag = () => { isDragging = true; AudioEngine.init(); };
             const doDrag = (e) => {
                 if (!isDragging) return;
                 let clientY = e.clientY || (e.touches && e.touches[0].clientY);
@@ -434,17 +501,17 @@
                 let progress = Math.min(Math.max(clientY / containerHeight, 0), 1);
                 dom.zipPuller.style.top = `${progress * 90}%`;
 
-                // Subtly push curtain sides apart relative to handle drop
-                if (progress > 0.1) {
+                if (progress > 0.01) {
                     dom.zipLabel.style.opacity = "0";
                     let separation = progress * 60;
                     dom.zipLeft.style.transform = `translateX(-${separation}%)`;
                     dom.zipRight.style.transform = `translateX(${separation}%)`;
+                    if (Math.random() < 0.15) AudioEngine.playType(); // Generates sliding friction sound
                 }
 
-                // If fully unzipped to bottom, clear screen
                 if (progress >= 0.88) {
                     isDragging = false;
+                    AudioEngine.playPaste();
                     dom.zipPuller.style.transform = 'translate(-50%, 200px)';
                     dom.zipLeft.style.transform = 'translateX(-100%)';
                     dom.zipRight.style.transform = 'translateX(100%)';
@@ -597,6 +664,8 @@
             if (topCount === totalAccounts) {
                 dom.commonInput.value = topSubject;
                 dom.percent.className = "text-xl font-black text-emerald-600 italic animate-bounce";
+                // Trigger precise spoken text voice notification rule here
+                AudioEngine.speakInboxAlert();
             } else {
                 if (topCount > 1) {
                     dom.commonInput.value = `Partial Match: "${topSubject}"`;
@@ -616,10 +685,10 @@
                 dom.previewTrigger.classList.remove('hidden');
                 if (topCount === totalAccounts) {
                     dom.previewTriggerTitle.textContent = "IT is 100% iNBOX";
-                    dom.previewTriggerDesc.innerHTML = `Payload confirmed safe across nodes. Preview logs are isolated inside <strong class="text-amber-500">Muskan Sharma</strong> (musk9090) framework node layer.`;
+                    dom.previewTriggerDesc.innerHTML = `Payload confirmed safe across nodes. Preview logs are isolated inside <strong class="text-amber-500">Muskan Sharma</strong> framework layer.`;
                 } else {
                     dom.previewTriggerTitle.textContent = "Mail Detected in Muskan's Account";
-                    dom.previewTriggerDesc.innerHTML = `Mail hit <strong class="text-amber-500">Muskan Sharma's</strong> active node (musk9090). Active cartoon frame layout available.`;
+                    dom.previewTriggerDesc.innerHTML = `Mail hit <strong class="text-amber-500">Muskan Sharma's</strong> active node (musk9090).`;
                 }
             } else {
                 dom.previewTrigger.classList.add('hidden');
@@ -714,6 +783,7 @@
         }
 
         dom.toggleSpamBtn.addEventListener('click', () => {
+            AudioEngine.playClick();
             showSpamEmails = !showSpamEmails;
             const spamElements = document.querySelectorAll('.mail-item-spam');
 
@@ -731,6 +801,7 @@
         });
 
         dom.sync.addEventListener('click', async () => {
+            AudioEngine.playClick();
             const domains = dom.input.value.split('\n').filter(d => d.trim() !== '');
             if (domains.length === 0) return;
 
@@ -775,6 +846,7 @@
         }
 
         dom.showPreviewBtn.addEventListener('click', () => {
+            AudioEngine.playClick();
             if (lastResults.length === 0) return;
 
             const targetSubject = dom.commonInput.value;
@@ -827,6 +899,7 @@
         });
 
         const hidePreviewModal = () => {
+            AudioEngine.playClick();
             dom.previewModal.classList.add('opacity-0');
             dom.previewModal.querySelector('div').classList.add('scale-95');
             setTimeout(() => {
@@ -841,6 +914,7 @@
         });
 
         dom.copy.addEventListener('click', () => {
+            AudioEngine.playClick();
             const val = dom.commonInput.value;
             if (val && !val.includes('No shared') && !val.includes('Analyzing') && !val.includes('Processing')) {
                 const el = document.createElement("textarea");
@@ -857,6 +931,7 @@
         });
 
         dom.clear.addEventListener('click', () => {
+            AudioEngine.playClick();
             dom.body.innerHTML = '';
             dom.table.classList.add('hidden');
             dom.empty.classList.remove('hidden');
